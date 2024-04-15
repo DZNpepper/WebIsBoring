@@ -16,7 +16,7 @@ const LandingPage = () => {
         <h1>The Web is Boring</h1>
         <p>Discover the interactive world of web components.</p>
         {/* Scroll Down Indicator */}
-        <div className="scroll-down">⟱ Scroll down ⟱</div>
+        <div className="scroll-down">⟱ Swipe up ⟱</div>
       </ParallaxLayer>
       
       {/* Second ParallaxLayer */}
