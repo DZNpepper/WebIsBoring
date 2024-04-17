@@ -14,7 +14,7 @@ const LandingPage = () => {
       <ParallaxLayer offset={0} speed={0.5} className="landing-page">
         {/* Title and Description */}
         <h1>The Web is Boring</h1>
-        <p>Discover the interactive world of web components.</p>
+        <p>Discover the components of computers.</p>
         {/* Scroll Down Indicator */}
         <div className="scroll-down">⟱ Swipe up ⟱</div>
       </ParallaxLayer>

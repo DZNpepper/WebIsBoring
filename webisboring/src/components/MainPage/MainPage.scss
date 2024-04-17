@@ -1,0 +1,77 @@
+// Define variables for reuse
+$white: rgba(255, 255, 255, 0.8);
+$black: #000000;
+$gray: #808080;
+
+.main-page {
+  padding: 1px;
+}
+
+.components-grid {
+  display: grid;
+  grid-template-columns: 1fr; // Single column for all sizes
+  gap: 1px;
+}
+
+.component-item {
+  height: 100vh; // Full viewport height for each component
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover; // Ensures the image covers the full area
+  background-position: center; // Centers the image in the element
+  background-repeat: no-repeat; // Prevents the image from repeating
+  position: relative;
+  
+  // Apply parallax effect
+  &.parallax {
+    background-attachment: fixed;
+  }
+
+  // Specify different colors for text in each section
+  &:nth-child(odd) .component-name {
+    color: $black;
+  }
+
+  &:nth-child(even) .component-name {
+    color: $gray; 
+  }
+}
+
+.overlay {
+    width: 50%; 
+    padding: 10px;
+    background-color: $white; 
+    position: absolute;
+    text-align: center;
+    
+    // Center text vertically
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    // Adjust width for smaller screens
+    @media (max-width: 768px) {
+      width: 80%; 
+    }
+  }
+
+.component-name {
+  font-size: 24px; 
+  font-weight: bold;
+  color: $black;
+
+  // Adjust font size for smaller screens
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.component-description {
+  font-size: 16px; 
+  color: $black;
+}
