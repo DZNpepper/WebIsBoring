@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b039a64.css",
-    "main.js": "/static/js/main.e1a262fb.js",
+    "main.css": "/static/css/main.41a446a7.css",
+    "main.js": "/static/js/main.0c1d2b2d.js",
     "static/js/453.93eaebbd.chunk.js": "/static/js/453.93eaebbd.chunk.js",
     "static/media/PowerSupply.jpg": "/static/media/PowerSupply.21a172a0fd6395ce1f57.jpg",
     "static/media/Ram.jpg": "/static/media/Ram.588ebcbcaf6558cf1e93.jpg",
@@ -13,12 +13,12 @@
     "static/media/Motherboard.jpeg": "/static/media/Motherboard.bb5a2bd65f7d81d0dd23.jpeg",
     "static/media/PCCASE.avif": "/static/media/PCCASE.c332e881ac428dbcd5dd.avif",
     "index.html": "/index.html",
-    "main.6b039a64.css.map": "/static/css/main.6b039a64.css.map",
-    "main.e1a262fb.js.map": "/static/js/main.e1a262fb.js.map",
+    "main.41a446a7.css.map": "/static/css/main.41a446a7.css.map",
+    "main.0c1d2b2d.js.map": "/static/js/main.0c1d2b2d.js.map",
     "453.93eaebbd.chunk.js.map": "/static/js/453.93eaebbd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b039a64.css",
-    "static/js/main.e1a262fb.js"
+    "static/css/main.41a446a7.css",
+    "static/js/main.0c1d2b2d.js"
   ]
 }
