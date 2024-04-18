@@ -1,33 +1,48 @@
-import React from 'react';
-
-import './MainPage.scss'; // Import SCSS styles
-import componentsData from '../../data/componentsData'; // Import componentsData
-import Title from '../Title';
+import React, { useState } from 'react';
+import './MainPage.scss';
+import componentsData from '../../data/componentsData';
+import Title from '../Title/Title';
+import Achievement from '../Achievement/Achievement.js'; 
 
 const MainPage = () => {
-  return (
-    // Main container section
-    <section className="main-page">
-      {/* Title */}
-      <Title className="main-title" />
-      {/* Components Grid */}
-      <section className="components-grid">
-        {/* Map through componentsData and render each component */}
-        {componentsData.map((component) => (
-          <article
-            key={component.id}
-            className={`component-item ${window.innerWidth > 768 ? 'parallax' : ''}`} // Apply parallax class conditionally
-            style={{ backgroundImage: `url(${component.image})` }} // Set background image dynamically
-          >
-            {/* Overlay with component name */}
-            <div className="overlay">
-              <span className="component-name">{component.name}</span> {/* Display component name */}
-            </div>
-          </article>
-        ))}
-      </section>
-    </section>
-  );
+    const [unlockedIds, setUnlockedIds] = useState([componentsData[0].id]);
+    const [showToast, setShowToast] = useState(false);
+    const [toastMessage, setToastMessage] = useState('');
+
+    const handleComponentClick = (index) => {
+        const nextIndex = index + 1;
+        if (nextIndex < componentsData.length && !unlockedIds.includes(componentsData[nextIndex].id)) {
+            setUnlockedIds(prevUnlockedIds => [...prevUnlockedIds, componentsData[nextIndex].id]);
+            setToastMessage(`You've unlocked: ${componentsData[nextIndex].name}!`);
+            setShowToast(true);
+            setTimeout(() => setShowToast(false), 3000); // Hide toast after 3 seconds
+        }
+    };
+
+    return (
+        <section className="main-page">
+            <Title center />
+            <section className="components-grid">
+                {componentsData.map((component, index) => (
+                    <article
+                        key={component.id}
+                        className={`component-item ${unlockedIds.includes(component.id) ? '' : 'locked'} ${window.innerWidth > 768 ? 'parallax' : ''}`}
+                        style={{ backgroundImage: `url(${component.image})`, position: 'relative' }}
+                        onClick={() => handleComponentClick(index)}
+                    >
+                        <div className="overlay" style={{ position: 'absolute', width: '100%', height: '100%', top: '0', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: unlockedIds.includes(component.id) ? 'transparent' : 'rgba(0, 0, 0, 0.5)' }}>
+                            {unlockedIds.includes(component.id) ? (
+                                <span className="overlay">{component.name}</span>
+                            ) : (
+                                <div className="lock-icon"></div>
+                            )}
+                        </div>
+                    </article>
+                ))}
+            </section>
+            {showToast && <Achievement show={showToast} message={toastMessage} onClose={() => setShowToast(false)} />}
+        </section>
+    );
 };
 
 export default MainPage;

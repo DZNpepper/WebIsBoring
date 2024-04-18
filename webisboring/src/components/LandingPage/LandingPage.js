@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import './LandingPage.scss';
-import Title from '../Title'; // Import Title
+import Title from '../Title/Title'; // Import Title
 
 const LandingPage = () => {
   // Initialize the navigate function from react-router-dom
