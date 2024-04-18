@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.41a446a7.css",
-    "main.js": "/static/js/main.0c1d2b2d.js",
+    "main.css": "/static/css/main.1a0052e5.css",
+    "main.js": "/static/js/main.6e158284.js",
     "static/js/453.93eaebbd.chunk.js": "/static/js/453.93eaebbd.chunk.js",
-    "static/media/PowerSupply.jpg": "/static/media/PowerSupply.21a172a0fd6395ce1f57.jpg",
-    "static/media/Ram.jpg": "/static/media/Ram.588ebcbcaf6558cf1e93.jpg",
-    "static/media/GPU.jpg": "/static/media/GPU.1add243baefd66b1c397.jpg",
-    "static/media/SSD.jpg": "/static/media/SSD.539a9d05c33675014d26.jpg",
-    "static/media/Hdd.png": "/static/media/Hdd.e836657a105c9927a398.png",
-    "static/media/ciruit.avif": "/static/media/ciruit.b9ba1c09ced42f847b4a.avif",
-    "static/media/CPU4avif.avif": "/static/media/CPU4avif.6e220f2e4df8457b2529.avif",
-    "static/media/Motherboard.jpeg": "/static/media/Motherboard.bb5a2bd65f7d81d0dd23.jpeg",
-    "static/media/PCCASE.avif": "/static/media/PCCASE.c332e881ac428dbcd5dd.avif",
+    "static/media/Ram.webp": "/static/media/Ram.32739536cbfcc1f393e4.webp",
+    "static/media/PowerSupply.webp": "/static/media/PowerSupply.7d4c19388d5670663cd9.webp",
+    "static/media/CPU1.webp": "/static/media/CPU1.a1a09d4b24dd72a9ff07.webp",
+    "static/media/Motherboard1.webp": "/static/media/Motherboard1.1e4d143e302dccb53cac.webp",
+    "static/media/SSD.webp": "/static/media/SSD.c364e5b080334761a605.webp",
+    "static/media/GPU.webp": "/static/media/GPU.30d793218e8d380ed5c5.webp",
+    "static/media/ciruit.webp": "/static/media/ciruit.228abc64170b250d62f3.webp",
+    "static/media/Hdd.webp": "/static/media/Hdd.c06432a13cc5bcc12394.webp",
+    "static/media/PCCASE.webp": "/static/media/PCCASE.44cb29176200c6bacfdf.webp",
+    "static/media/Padlock.webp": "/static/media/Padlock.15a035699e35baf1acb7.webp",
     "index.html": "/index.html",
-    "main.41a446a7.css.map": "/static/css/main.41a446a7.css.map",
-    "main.0c1d2b2d.js.map": "/static/js/main.0c1d2b2d.js.map",
+    "main.1a0052e5.css.map": "/static/css/main.1a0052e5.css.map",
+    "main.6e158284.js.map": "/static/js/main.6e158284.js.map",
     "453.93eaebbd.chunk.js.map": "/static/js/453.93eaebbd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41a446a7.css",
-    "static/js/main.0c1d2b2d.js"
+    "static/css/main.1a0052e5.css",
+    "static/js/main.6e158284.js"
   ]
 }

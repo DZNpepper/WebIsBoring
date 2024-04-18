@@ -1,7 +1,7 @@
 // Importing images for components
 import pccaseImage from '../assets/images/PCCASE.webp';
-import MotherboardImage from '../assets/images/Motherboard.webp';
-import cpuImage from '../assets/images/CPU.webp';
+import MotherboardImage from '../assets/images/Motherboard1.webp';
+import cpuImage from '../assets/images/CPU1.webp';
 import GPUImage from '../assets/images/GPU.webp'
 import RamImage from '../assets/images/Ram.webp'
 import PowerSupply from '../assets/images/PowerSupply.webp'
