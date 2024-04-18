@@ -50,7 +50,8 @@ $gray: #808080; // Gray color
 
   // Overlay styles
   .overlay {
-    width: 50%; // Overlay width
+    width: 20%; // Reduce width for smaller screens
+    height: 8%; // Overlay width
     padding: 10px; // Padding for overlay content
     background-color: $white; // White background color
     position: absolute; // Absolute positioning
@@ -63,7 +64,8 @@ $gray: #808080; // Gray color
 
     // Adjust width for smaller screens
     @media (max-width: 768px) {
-      width: 80%; // Reduce width for smaller screens
+      width: 50%; // Reduce width for smaller screens
+      height: 8%;
     }
   }
 

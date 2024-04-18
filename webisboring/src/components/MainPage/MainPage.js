@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './MainPage.scss'; // Import SCSS styles
 import componentsData from '../../data/componentsData'; // Import componentsData
 import Title from '../Title';
@@ -8,7 +9,7 @@ const MainPage = () => {
     // Main container section
     <section className="main-page">
       {/* Title */}
-      <Title />
+      <Title className="main-title" />
       {/* Components Grid */}
       <section className="components-grid">
         {/* Map through componentsData and render each component */}
