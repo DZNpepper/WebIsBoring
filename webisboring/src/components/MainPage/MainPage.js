@@ -3,7 +3,7 @@ import './MainPage.scss';
 import { Link } from 'react-router-dom';
 import componentsData from '../../data/componentsData';
 import Title from '../Title/Title';
-import padlockImage from '../../assets/images/Padlock.png'; // Ensure this is correctly imported
+import padlockImage from '../../assets/images/Padlock.webp'; 
 
 const MainPage = () => {
     return (

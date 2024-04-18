@@ -62,7 +62,6 @@ $gray: #808080; // Gray color
     font-size: 40px; // Font size
     font-weight: bold; // Bold font weight
     color:  $white; 
-    border-radius: 28%;
 
     // Center text vertically
     display: flex; // Flex display
@@ -93,6 +92,7 @@ $gray: #808080; // Gray color
     font-size: 16px; // Font size
   }
 }
+  
 .lock-icon {
   width: 30rem;  // Set a fixed width for the lock icon
   height: 30rem;  // Set a fixed height to match the width

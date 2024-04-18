@@ -1,12 +1,12 @@
 // Importing images for components
-import pccaseImage from '../assets/images/PCCASE.avif';
-import cpuImage from '../assets/images/CPU4avif.avif';
-import MotherboardImage from '../assets/images/Motherboard.jpeg';
-import GPUImage from '../assets/images/GPU.jpg'
-import RamImage from '../assets/images/Ram.jpg'
-import PowerSupply from '../assets/images/PowerSupply.jpg'
-import Hdd from '../assets/images/Hdd.png'
-import SSD from '../assets/images/SSD.jpg'
+import pccaseImage from '../assets/images/PCCASE.webp';
+import MotherboardImage from '../assets/images/Motherboard.webp';
+import cpuImage from '../assets/images/CPU.webp';
+import GPUImage from '../assets/images/GPU.webp'
+import RamImage from '../assets/images/Ram.webp'
+import PowerSupply from '../assets/images/PowerSupply.webp'
+import Hdd from '../assets/images/Hdd.webp'
+import SSD from '../assets/images/SSD.webp'
 
 // Array containing data for various components
 const componentsData = [
