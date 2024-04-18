@@ -33,7 +33,7 @@ $gray: #808080; // Gray color
       filter: grayscale(100%); // Grey out the image for locked items
 
       .overlay {
-        background-color: rgba(128, 128, 128, 0.8); // Applying a grey transparent overlay
+        background-color: rgba(224, 224, 224, 0); // Applying a grey transparent overlay
       }
     }
 
@@ -52,16 +52,17 @@ $gray: #808080; // Gray color
 
   // Overlay styles
   .overlay {
-    width: 20%; // Reduce width for smaller screens
+    width: 40%; // Reduce width for smaller screens
     height: 8%; // Overlay width
     padding: 10px; // Padding for overlay content
-    background-color: $white; // White background color
+    background-color: $black; // White background color
     position: absolute; // Absolute positioning
     text-align: center; // Center align text
     text-decoration: none;
     font-size: 40px; // Font size
     font-weight: bold; // Bold font weight
-    color: #000;
+    color:  $white; 
+    border-radius: 28%;
 
     // Center text vertically
     display: flex; // Flex display
@@ -71,6 +72,7 @@ $gray: #808080; // Gray color
     // Adjust width for smaller screens
     @media (max-width: 768px) {
       width: 62%; // Reduce width for smaller screens
+      border-radius: 30%;
       height: 20%;
     }
   }
@@ -92,36 +94,21 @@ $gray: #808080; // Gray color
   }
 }
 .lock-icon {
-  width: 25%; // Increase the width to be 25% of the parent container
-  aspect-ratio: 1; // Keep the aspect ratio to 1 to maintain a square shape
-  background: $white; // White background color for the lock
-  border-radius: 50%; // Make it circular
+  width: 30rem;  // Set a fixed width for the lock icon
+  height: 30rem;  // Set a fixed height to match the width
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-
-  &::before, &::after {
-    background: $black; // Ensure the parts of the lock are black
+  
+  // Adjust for smaller screens
+  @media (max-width: 768px) {
+    width: 20rem;  // Set a fixed width for the lock icon
+    height: 20rem; 
   }
-
-  &::before {
-    content: '';
-    position: absolute;
-    width: 50%; // Making the shackle wider
-    height: 30%; // Making the shackle shorter relative to the base
-    top: 10%;
-    left: 25%; // Center horizontally
-    border-radius: 50%; // Rounded top of the shackle
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    width: 60%; // Base of the lock width
-    height: 40%; // Base of the lock height
-    bottom: 20%; // Positioning from the bottom
-    left: 20%; // Center horizontally
-    border-radius: 10%; // Slightly rounded corners for the lock base
+  
+  img {
+      width: 100%;  // Ensure the image fills the lock-icon container
+      height: auto;  // Maintain the aspect ratio of the image
   }
 }
