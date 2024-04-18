@@ -8,7 +8,7 @@ const Achievement = ({ show, message, onClose }) => {
     if (show) {
       setShouldRender(true);
     } else {
-      setTimeout(() => setShouldRender(false), 600); // Match this delay with fade-out duration in CSS
+      setTimeout(() => setShouldRender(false), 600); 
     }
   }, [show]);
 
