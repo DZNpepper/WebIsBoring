@@ -71,7 +71,6 @@ $gray: #808080; // Gray color
     // Adjust width for smaller screens
     @media (max-width: 768px) {
       width: 62%; // Reduce width for smaller screens
-      border-radius: 30%;
       height: 20%;
     }
   }
