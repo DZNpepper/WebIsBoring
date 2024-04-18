@@ -61,6 +61,25 @@ $accent-color: #ccc;
       }
     }
   }
+
+  // Media Query for Mobile Devices
+  @media only screen and (max-width: 600px) {
+    .scroll-down {
+      margin-top: 5rem;
+    }
+
+    .enter-site {
+      width: 100%;
+    }
+
+
+    // Hide scroll down indicator on desktop
+    @media only screen and (min-width: 601px) {
+      .scroll-down {
+        display: none;
+      }
+    }
+  }
 }
 
 // Keyframes animation
@@ -70,18 +89,5 @@ $accent-color: #ccc;
   }
   50% {
     transform: translateY(-40px);
-  }
-}
-
-// Media Query for Mobile Devices
-@media only screen and (max-width: 600px) {
-  .landing-page {
-    .scroll-down {
-      margin-top: 5rem;
-    }
-
-    .enter-site {
-      width: 100%;
-    }
   }
 }
