@@ -15,7 +15,6 @@ const Achievement = ({ show, message, onClose }) => {
   return shouldRender ? (
     <div className={`achievement ${show ? 'fade-in' : 'fade-out'}`}>
       <span>{message}</span>
-      <button onClick={onClose}>x</button>
     </div>
   ) : null;
 };
