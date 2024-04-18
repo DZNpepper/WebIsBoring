@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import './LandingPage.scss';
+import Title from '../Title'; // Import Title
 
 const LandingPage = () => {
   // Initialize the navigate function from react-router-dom
@@ -13,7 +14,7 @@ const LandingPage = () => {
       {/* First ParallaxLayer */}
       <ParallaxLayer offset={0} speed={0.5} className="landing-page">
         {/* Title and Description */}
-        <h1>The Web is Boring</h1>
+        <Title />
         <p>Discover the components of computers.</p>
         {/* Scroll Down Indicator */}
         <div className="scroll-down">⟱ Swipe up ⟱</div>

@@ -1,27 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './MainPage.scss';
-import componentsData from '../../data/componentsData';
+import './MainPage.scss'; // Import SCSS styles
+import componentsData from '../../data/componentsData'; // Import componentsData
+import Title from '../Title';
 
 const MainPage = () => {
   return (
+    // Main container section
     <section className="main-page">
-      {/* Heading */}
-      <h2>Choose a Component to Explore:</h2>
+      {/* Title */}
+      <Title />
       {/* Components Grid */}
       <section className="components-grid">
+        {/* Map through componentsData and render each component */}
         {componentsData.map((component) => (
-          <Link
+          <article
             key={component.id}
-            to={`/components/${component.id}`}
-            className="component-item parallax"
-            style={{ backgroundImage: `url(${component.image})` }}
+            className={`component-item ${window.innerWidth > 768 ? 'parallax' : ''}`} // Apply parallax class conditionally
+            style={{ backgroundImage: `url(${component.image})` }} // Set background image dynamically
           >
             {/* Overlay with component name */}
-            <span className="overlay">
-              <span className="component-name">{component.name}</span>
-            </span>
-          </Link>
+            <div className="overlay">
+              <span className="component-name">{component.name}</span> {/* Display component name */}
+            </div>
+          </article>
         ))}
       </section>
     </section>

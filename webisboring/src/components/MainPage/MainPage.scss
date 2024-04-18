@@ -1,77 +1,85 @@
 // Define variables for reuse
-$white: rgba(255, 255, 255, 0.8);
-$black: #000000;
-$gray: #808080;
+$white: rgba(255, 255, 255, 0.8); // White color with transparency
+$black: #000000; // Black color
+$gray: #808080; // Gray color
 
+// Main page styles
 .main-page {
-  padding: 1px;
-}
+  padding: 1px; // Padding
 
-.components-grid {
-  display: grid;
-  grid-template-columns: 1fr; // Single column for all sizes
-  gap: 1px;
-}
-
-.component-item {
-  height: 100vh; // Full viewport height for each component
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 20px;
-  overflow: hidden;
-  position: relative;
-  background-size: cover; // Ensures the image covers the full area
-  background-position: center; // Centers the image in the element
-  background-repeat: no-repeat; // Prevents the image from repeating
-  position: relative;
-  
-  // Apply parallax effect
-  &.parallax {
-    background-attachment: fixed;
+  // Components grid styles
+  .components-grid {
+    display: grid; // Grid display
+    grid-template-columns: 1fr; // Single column for all sizes
+    gap: 1px; // Gap between grid items
   }
 
-  // Specify different colors for text in each section
-  &:nth-child(odd) .component-name {
-    color: $black;
-  }
+  // Component item styles
+  .component-item {
+    height: 100vh; // Full viewport height for each component
+    display: flex; // Flex display
+    align-items: center; // Center align items vertically
+    justify-content: center; // Center align items horizontally
+    color: white; // Text color
+    font-size: 20px; // Font size
+    overflow: hidden; // Hide overflow
+    position: relative; // Relative positioning
+    background-size: cover; // Ensures the image covers the full area
+    background-position: center; // Centers the image in the element
+    background-repeat: no-repeat; // Prevents the image from repeating
 
-  &:nth-child(even) .component-name {
-    color: $gray; 
-  }
-}
-
-.overlay {
-    width: 50%; 
-    padding: 10px;
-    background-color: $white; 
-    position: absolute;
-    text-align: center;
-    
-    // Center text vertically
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
-    // Adjust width for smaller screens
+    // Media query for smaller screens
     @media (max-width: 768px) {
-      width: 80%; 
+      height: 59vh; // Reduce height for smaller screens
+    }
+
+    // Apply parallax effect
+    &.parallax {
+      background-attachment: fixed; // Fixed background attachment for parallax effect
+    }
+
+    // Specify different colors for text in each section
+    &:nth-child(odd) .component-name {
+      color: $black; // Black text color for odd items
+    }
+
+    &:nth-child(even) .component-name {
+      color: $gray; // Gray text color for even items
     }
   }
 
-.component-name {
-  font-size: 24px; 
-  font-weight: bold;
-  color: $black;
+  // Overlay styles
+  .overlay {
+    width: 50%; // Overlay width
+    padding: 10px; // Padding for overlay content
+    background-color: $white; // White background color
+    position: absolute; // Absolute positioning
+    text-align: center; // Center align text
 
-  // Adjust font size for smaller screens
-  @media (max-width: 768px) {
-    font-size: 18px;
+    // Center text vertically
+    display: flex; // Flex display
+    flex-direction: column; // Column direction for flex
+    justify-content: center; // Center justify content vertically
+
+    // Adjust width for smaller screens
+    @media (max-width: 768px) {
+      width: 80%; // Reduce width for smaller screens
+    }
   }
-}
 
-.component-description {
-  font-size: 16px; 
-  color: $black;
+  // Component name styles
+  .component-name {
+    font-size: 24px; // Font size
+    font-weight: bold; // Bold font weight
+
+    // Adjust font size for smaller screens
+    @media (max-width: 768px) {
+      font-size: 18px; // Reduce font size for smaller screens
+    }
+  }
+
+  // Component description styles
+  .component-description {
+    font-size: 16px; // Font size
+  }
 }

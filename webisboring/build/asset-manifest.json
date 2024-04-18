@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.11c9a6a7.css",
-    "main.js": "/static/js/main.1e4cb7cb.js",
+    "main.css": "/static/css/main.873ef385.css",
+    "main.js": "/static/js/main.8b1eb113.js",
     "static/js/453.93eaebbd.chunk.js": "/static/js/453.93eaebbd.chunk.js",
+    "static/media/PowerSupply.jpg": "/static/media/PowerSupply.21a172a0fd6395ce1f57.jpg",
+    "static/media/Ram.jpg": "/static/media/Ram.588ebcbcaf6558cf1e93.jpg",
+    "static/media/GPU.jpg": "/static/media/GPU.1add243baefd66b1c397.jpg",
+    "static/media/SSD.jpg": "/static/media/SSD.539a9d05c33675014d26.jpg",
+    "static/media/Hdd.png": "/static/media/Hdd.e836657a105c9927a398.png",
     "static/media/ciruit.avif": "/static/media/ciruit.b9ba1c09ced42f847b4a.avif",
+    "static/media/CPU4avif.avif": "/static/media/CPU4avif.6e220f2e4df8457b2529.avif",
+    "static/media/Motherboard.jpeg": "/static/media/Motherboard.bb5a2bd65f7d81d0dd23.jpeg",
+    "static/media/PCCASE.avif": "/static/media/PCCASE.c332e881ac428dbcd5dd.avif",
     "index.html": "/index.html",
-    "main.11c9a6a7.css.map": "/static/css/main.11c9a6a7.css.map",
-    "main.1e4cb7cb.js.map": "/static/js/main.1e4cb7cb.js.map",
+    "main.873ef385.css.map": "/static/css/main.873ef385.css.map",
+    "main.8b1eb113.js.map": "/static/js/main.8b1eb113.js.map",
     "453.93eaebbd.chunk.js.map": "/static/js/453.93eaebbd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11c9a6a7.css",
-    "static/js/main.1e4cb7cb.js"
+    "static/css/main.873ef385.css",
+    "static/js/main.8b1eb113.js"
   ]
 }
