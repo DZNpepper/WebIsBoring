@@ -61,7 +61,7 @@ const componentsData = [
   },
   {
     id: 'ssd',
-    name: 'System Storage Drive',
+    name: 'SSD',
     description: 'Removable storage device.', // Description
     image: SSD, // Image
     unlocked: false

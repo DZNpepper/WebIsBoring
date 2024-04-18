@@ -1,23 +1,34 @@
 .achievement {
-    position: fixed;
-    top: 20px; // Position at the top
-    left: 50%;
-    transform: translateX(-50%); // Center horizontally
-    background-color: #4CAF50; // Green background for success
+  position: fixed;
+  top: 20px; /* Position at the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+
+  button {
+    background: none;
+    border: none;
     color: white;
-    padding: 20px 40px;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    opacity: 1;
-    transition: opacity 1s ease-out;
-  
-    button {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      margin-left: 15px;
-    }
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 15px;
   }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .achievement {
+    width: 90%; /* Adjust width for smaller screens */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    padding: 15px 20px; /* Reduce padding for smaller screens */
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+}
