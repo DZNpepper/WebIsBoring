@@ -1,29 +1,52 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import AchievementToast from '../Achievement/Achievement';
-import { useNavigate } from 'react-router-dom'; // Importing useNavigate for potential future routing needs
+import PcCaseIntroduction from './PcCaseIntroduction.js';
+import PcCaseTypes from './PcCaseTypes.js';
+import PcCaseFeatures from './PcCaseFeatures.js';
+import PcCaseComponents from './PcCaseComponents.js';
 
+import './PcCasePage.scss';
+
+// Component representing the page for PC case
 const PcCasePage = ({ unlockNextComponent }) => {
-    const [showToast, setShowToast] = useState(false); // Tracks visibility of the toast
-    const [toastMessage, setToastMessage] = useState(''); // Stores the toast message
-    const navigate = useNavigate(); // Navigation hook, not currently used but available for future routing actions
+    // State variables for showing achievement toast
+    const [showToast, setShowToast] = useState(false);
+    const [toastMessage, setToastMessage] = useState('');
+    const navigate = useNavigate();
 
-   useEffect(() => {
-        // Call unlockNextComponent to attempt to unlock the next component and retrieve its name
+    // Effect hook to unlock the next component and show achievement toast
+    useEffect(() => {
         const nextComponentName = unlockNextComponent('pc-case');
-
-        // If there is a next component to unlock, configure and display the toast
         if (nextComponentName) {
-            setToastMessage(`Achievement Unlocked: ${nextComponentName}!`); // Set the toast message
-            setShowToast(true); // Show the toast
+            setToastMessage(`Achievement Unlocked: ${nextComponentName}!`);
+            setShowToast(true);
             setTimeout(() => setShowToast(false), 3000);
         }
     }, [navigate, unlockNextComponent]);
 
+    // Event handler to navigate to the main page
+    const handleGoHome = () => navigate('/main-page');
+    
+    // Event handler to continue to the motherboard page
+    const handleContinue = () => navigate('/motherboard');
+
+    // CSS classes for the page
+    const pageClasses = `pc-case-page ${showToast ? 'is-active' : ''}`;
+
     return (
-        <div>
-            <h1>PC Case</h1>
-            <p>Detailed information about the PC Case component.</p>
-            {/* Render the AchievementToast component only if showToast is true */}
+        <div className={pageClasses}>
+            {/* Components for PC case introduction, types, features, and components */}
+            <PcCaseIntroduction />
+            <PcCaseTypes />
+            <PcCaseFeatures />
+            <PcCaseComponents />
+            {/* Navigation buttons */}
+            <div className="navigation-buttons">
+                <button onClick={handleGoHome}>Go Back to Main Menu</button>
+                <button onClick={handleContinue}>Continue to Motherboard</button>
+            </div>
+            {/* Achievement toast */}
             {showToast && <AchievementToast show={showToast} message={toastMessage} />}
         </div>
     );
