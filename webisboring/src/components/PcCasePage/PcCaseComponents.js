@@ -2,7 +2,7 @@ import React from 'react';
 
 // Component displaying the key components of a PC case
 const PcCaseComponents = () => (
-    <div className="pc-case-features">
+    <div className="pc-case-components">
         {/* Title for the key components */}
         <h2>Key Components to Consider</h2>
         {/* List of key components */}

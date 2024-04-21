@@ -1,0 +1,48 @@
+// Define color
+$primary-color: #007BFF;
+$hover-color: #0056b3;
+$text-color: #333;
+$base-spacing: 20px;
+// Define a breakpoint for mobile devices
+$mobile-breakpoint: 768px; 
+// General styles for parallax backgrounds
+.parallax {
+  background: {
+    attachment: fixed;
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+  }
+  height: 50vh;
+  margin-top: $base-spacing;
+}
+
+// Styling for navigation buttons
+.navigation-buttons {
+  margin-top: $base-spacing;
+  text-align: center;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  button {
+    padding: 10px $base-spacing; 
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  // Media query for mobile devices
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column; 
+    button {
+      width: 100%;
+    }
+  }
+}

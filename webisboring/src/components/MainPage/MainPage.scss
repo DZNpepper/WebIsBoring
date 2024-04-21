@@ -1,23 +1,23 @@
-// Define variables for reuse
-$white: rgba(255, 255, 255, 0.8); // White color with transparency
-$black: #000000; // Black color
-$gray: #808080; // Gray color
+// Define variables
+$white: rgba(255, 255, 255, 0.8); // White with transparency
+$black: #000000;
+$gray: #808080;
 
 // Main page styles
 .main-page {
-  padding: 1px; // Padding
+  padding: 1px;
 
-  // Components grid styles
+  // Grid styles
   .components-grid {
-    display: grid; // Grid display
-    grid-template-columns: 1fr; // Single column for all sizes
-    gap: 1px; // Gap between grid items
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 1px;
   }
 
   // Component item styles
   .component-item {
-    height: 100vh; // Full viewport height for each component
-    display: flex; // Flex display
+    height: 100vh; 
+    display: flex; 
     align-items: center; // Center align items vertically
     justify-content: center; // Center align items horizontally
     color: white; // Text color
