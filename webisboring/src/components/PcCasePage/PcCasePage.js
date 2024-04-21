@@ -36,7 +36,7 @@ const PcCasePage = ({ unlockNextComponent }) => {
             {/* Introduction section  */}
             <PcCaseIntroduction />
             {/* Parallax background section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})` }}>
+            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})` }}, //position: 'relative'
             </section>
             {/* Description section */}
             <PcCaseDescription />
