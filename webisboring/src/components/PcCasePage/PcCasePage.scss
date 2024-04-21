@@ -1,11 +1,13 @@
-// Define color
+// Colors
 $primary-color: #007BFF;
 $hover-color: #0056b3;
 $text-color: #333;
+//breakpoint
 $base-spacing: 20px;
-// Define a breakpoint for mobile devices
-$mobile-breakpoint: 768px; 
-// General styles for parallax backgrounds
+ // Mobile devices breakpoint
+$mobile-breakpoint: 768px;
+
+// General styles for parallax backgrounds on desktop
 .parallax {
   background: {
     attachment: fixed;
@@ -19,18 +21,17 @@ $mobile-breakpoint: 768px;
 
 .pc-case-page {
   .component-item {
-    background-size: cover; // Ensures the image covers the full area of the element
-    background-position: center; // Centers the image within the element
-    background-repeat: no-repeat; // Prevents the image from tiling
-    height: 50vh; // Sets a responsive height that adapts to various screen sizes
-
-    // Media query for mobile devices to optimize image display
-    @media (max-width: 768px) {
-      height: 59vh; // Adjusted height for mobile devices to maintain a better aspect ratio
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh; 
+    // Apply different styles for mobile devices
+    @media (max-width: $mobile-breakpoint) {
+      background-attachment: scroll; 
+      height: 100vh; 
     }
   }
 }
-
 
 // Styling for navigation buttons
 .navigation-buttons {
@@ -38,9 +39,10 @@ $mobile-breakpoint: 768px;
   text-align: center;
   display: flex;
   flex-direction: row; 
-  justify-content: center; 
+  justify-content: center;
+
   button {
-    padding: 10px $base-spacing; 
+    padding: 10px $base-spacing;
     background-color: $primary-color;
     color: white;
     border: none;
@@ -53,16 +55,12 @@ $mobile-breakpoint: 768px;
     }
   }
 
-
-  // Media query for mobile devices
+  // Button styles for mobile devices
   @media (max-width: $mobile-breakpoint) {
     flex-direction: column; 
+
     button {
-      width: 100%;
-    }
-  img {
-      width: 100%;  
-      height: auto;  
+      width: 100%; 
     }
   }
 }
