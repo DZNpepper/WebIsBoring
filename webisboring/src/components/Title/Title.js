@@ -1,12 +1,11 @@
 import React from 'react';
-import './Title.scss'; // Import SCSS styles
+import './Title.scss';
 
-const TitleComponent = ({ center }) => {
-  const titleClass = center ? 'title-center' : '';
+const Title = ({ text, center }) => { 
+  const titleClass = center ? 'title' : '';
   return (
-    <h1 className={titleClass}>The Web is Boring</h1>
+    <h1 className={titleClass}>{text}</h1>
   );
 };
 
-
-export default TitleComponent;
+export default Title;

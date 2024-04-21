@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AchievementToast from '../Achievement/Achievement';
-import MotherboardIntroduction from './MotherboardIntroduction'; // Importing the component for introduction section
-import MotherboardComponents from './MotherboardComponents'; // Importing the component for components section
-import MotherboardTypes from './MotherboardTypes'; // Importing the component for types section
-import MotherboardFeatures from './MotherboardFeatures'; // Importing the component for features section
+import Title from './MotherboardTitle';
+import MotherboardComponents from './MotherboardComponents'; 
+import MotherboardTypes from './MotherboardTypes';
+import MotherboardFeatures from './MotherboardFeatures';
 
 import './Motherboard.scss'; // Importing the stylesheet for styling
 
@@ -39,8 +39,7 @@ const MotherboardPage = ({ unlockNextComponent }) => {
     return (
         <div className="motherboard-page">
             {/* Render the MotherboardIntroduction component */}
-            <MotherboardIntroduction />
-            {/* Render the MotherboardComponents component */}
+           <Title text="The Motherboard" />            {/* Render the MotherboardComponents component */}
             <MotherboardComponents />
             {/* Render the MotherboardTypes component */}
             <MotherboardTypes />

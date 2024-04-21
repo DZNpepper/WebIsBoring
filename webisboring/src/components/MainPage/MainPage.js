@@ -10,7 +10,7 @@ const MainPage = () => {
     return (
         <div>
             <section className="main-page">
-                <Title center />
+                 <Title text="The Web is Boring" />
                 <section className="components-grid">
                     {componentsData.map((component) => (
                         <article

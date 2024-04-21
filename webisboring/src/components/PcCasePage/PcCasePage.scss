@@ -1,39 +1,61 @@
-// SCSS variables for theming and breakpoints
+// Colors
 $primary-color: #007BFF;
 $hover-color: #0056b3;
 $text-color: #333;
+//breakpoint
 $base-spacing: 20px;
-$mobile-breakpoint: 768px; // Defining mobile breakpoint
-
+ // Mobile devices breakpoint
+$mobile-breakpoint: 768px;
 // General styles for parallax backgrounds on desktop
 .parallax {
   background: {
-    attachment: fixed; // Fixed background for parallax effect
-    position: center; // Center the background image
-    repeat: no-repeat; // No repeating the background
-    size: cover; // Cover the entire area of the element
+    attachment: fixed;
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+    max-width: 100%;
   }
-  height: 50vh; // Set a standard height for parallax sections
-  margin-top: $base-spacing; // Space above the parallax sections
+  height: 50vh;
+  margin-top: $base-spacing;
 }
+ // Mobile devices breakpoint
+ $mobile-breakpoint: 768px;
+ // General styles for parallax backgrounds on desktop
+ .parallax {
+   background: {
+     attachment: center;
+     position: center;
+     repeat: no-repeat;
+     size: cover;
+     max-width: 100%;
+   }
+   @media (max-width: $mobile-breakpoint) {
+     attachment: local;
+   }
+ 
+ 
+   height: 50vh;
+   margin-top: $base-spacing;
+ }x
 
 .pc-case-page {
+  h1 {
+    text-align: center;
+  }
   .component-item {
-    background-size: cover; // Cover the entire background
-    background-position: center; // Center the background image
-    background-repeat: no-repeat; // No tiling of the image
-    height: 50vh; // Standard height for desktop
-
-    // Adjusting styles for mobile devices
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh; 
+    // Apply different styles for mobile devices
     @media (max-width: $mobile-breakpoint) {
-      background-attachment: scroll; // Use scroll instead of fixed on mobile
-      height: 100vh; // Make images full screen on mobile
-      width: 100vw; // Ensure the width is also 100% of the viewport
+      background-attachment: scroll; 
+      height: 100vh; 
     }
   }
 }
 
-// Styling for navigation buttons with responsive adjustments
+// Styling for navigation buttons
 .navigation-buttons {
   margin-top: $base-spacing;
   text-align: center;
@@ -53,10 +75,13 @@ $mobile-breakpoint: 768px; // Defining mobile breakpoint
     &:hover {
       background-color: $hover-color;
     }
+  }
 
-    // Styles for buttons on mobile
-    @media (max-width: $mobile-breakpoint) {
-      flex-direction: column; 
+  // Button styles for mobile devices
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column; 
+
+    button {
       width: 100%; 
     }
   }

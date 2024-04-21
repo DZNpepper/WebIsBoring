@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 // Importing images
 import AchievementToast from '../Achievement/Achievement.js';
-import PcCaseIntroduction from './PcCaseTitle.js';
+import Title from './PcCaseTitle.js';
 import PcCaseDescription from './PcCaseDescription.js';
 import PcCaseTypes from './PcCaseTypes.js';
 import PcCaseFeatures from './PcCaseFeatures.js';
@@ -34,24 +34,24 @@ const PcCasePage = ({ unlockNextComponent }) => {
     return (
         <div className={`pc-case-page ${showToast ? 'is-active' : ''}`}>
             {/* Introduction section  */}
-            <PcCaseIntroduction />
+            <Title text="PC Case" />
             {/* Parallax background section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})` }}>
+            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
             </section>
             {/* Description section */}
             <PcCaseDescription />
             {/* Second parallax background section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage2})` }}>
+            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage2})`, position: 'relative' }}>
             </section>
             {/* Types section*/}
             <PcCaseTypes />
             {/* Third parallax background section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})` }}>
+            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
             </section>
             {/* Features section */}
             <PcCaseFeatures />
             {/* Fourth parallax background section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})` }}>
+            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
             </section>
             {/* Components section*/}
             <PcCaseComponents />
