@@ -17,6 +17,21 @@ $mobile-breakpoint: 768px;
   margin-top: $base-spacing;
 }
 
+.pc-case-page {
+  .component-item {
+    background-size: cover; // Ensures the image covers the full area of the element
+    background-position: center; // Centers the image within the element
+    background-repeat: no-repeat; // Prevents the image from tiling
+    height: 50vh; // Sets a responsive height that adapts to various screen sizes
+
+    // Media query for mobile devices to optimize image display
+    @media (max-width: 768px) {
+      height: 59vh; // Adjusted height for mobile devices to maintain a better aspect ratio
+    }
+  }
+}
+
+
 // Styling for navigation buttons
 .navigation-buttons {
   margin-top: $base-spacing;
@@ -37,6 +52,7 @@ $mobile-breakpoint: 768px;
       background-color: $hover-color;
     }
   }
+
 
   // Media query for mobile devices
   @media (max-width: $mobile-breakpoint) {
