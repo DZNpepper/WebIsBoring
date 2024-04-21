@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import Footer from '../Footer/Footer.js';
+
 import './LandingPage.scss';
-import Title from '../Title/Title'; // Import Title
+import Title from '../Title/Title';
 
 const LandingPage = () => {
   // Initialize the navigate function from react-router-dom
@@ -20,7 +20,6 @@ const LandingPage = () => {
           {/* Scroll Down Indicator */}
           <div className="scroll-down">⟱ Swipe down ⟱</div>
         </ParallaxLayer>
-        
         {/* Second ParallaxLayer */}
         <ParallaxLayer offset={1} speed={0.5} className="landing-page">
           {/* Content for entering the site */}
@@ -31,7 +30,6 @@ const LandingPage = () => {
           </div>
         </ParallaxLayer>
       </Parallax>
-      <Footer />
     </div>
   );
 };
