@@ -1,39 +1,39 @@
-// Colors
+// SCSS variables for theming and breakpoints
 $primary-color: #007BFF;
 $hover-color: #0056b3;
 $text-color: #333;
-//breakpoint
 $base-spacing: 20px;
- // Mobile devices breakpoint
-$mobile-breakpoint: 768px;
+$mobile-breakpoint: 768px; // Defining mobile breakpoint
 
 // General styles for parallax backgrounds on desktop
 .parallax {
   background: {
-    attachment: fixed;
-    position: center;
-    repeat: no-repeat;
-    size: cover;
+    attachment: fixed; // Fixed background for parallax effect
+    position: center; // Center the background image
+    repeat: no-repeat; // No repeating the background
+    size: cover; // Cover the entire area of the element
   }
-  height: 50vh;
-  margin-top: $base-spacing;
+  height: 50vh; // Set a standard height for parallax sections
+  margin-top: $base-spacing; // Space above the parallax sections
 }
 
 .pc-case-page {
   .component-item {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh; 
-    // Apply different styles for mobile devices
+    background-size: cover; // Cover the entire background
+    background-position: center; // Center the background image
+    background-repeat: no-repeat; // No tiling of the image
+    height: 50vh; // Standard height for desktop
+
+    // Adjusting styles for mobile devices
     @media (max-width: $mobile-breakpoint) {
-      background-attachment: scroll; 
-      height: 100vh; 
+      background-attachment: scroll; // Use scroll instead of fixed on mobile
+      height: 100vh; // Make images full screen on mobile
+      width: 100vw; // Ensure the width is also 100% of the viewport
     }
   }
 }
 
-// Styling for navigation buttons
+// Styling for navigation buttons with responsive adjustments
 .navigation-buttons {
   margin-top: $base-spacing;
   text-align: center;
@@ -53,13 +53,10 @@ $mobile-breakpoint: 768px;
     &:hover {
       background-color: $hover-color;
     }
-  }
 
-  // Button styles for mobile devices
-  @media (max-width: $mobile-breakpoint) {
-    flex-direction: column; 
-
-    button {
+    // Styles for buttons on mobile
+    @media (max-width: $mobile-breakpoint) {
+      flex-direction: column; 
       width: 100%; 
     }
   }
