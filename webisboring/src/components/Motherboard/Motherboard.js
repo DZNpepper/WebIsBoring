@@ -5,8 +5,10 @@ import Title from './MotherboardTitle';
 import MotherboardComponents from './MotherboardComponents'; 
 import MotherboardTypes from './MotherboardTypes';
 import MotherboardFeatures from './MotherboardFeatures';
+import PcCaseImage from '../../assets/images/PCCASE.webp';
+import Footer from '../Footer/Footer';
 
-import './Motherboard.scss'; // Importing the stylesheet for styling
+import './Motherboard.scss'; // Importing the styles
 
 const MotherboardPage = ({ unlockNextComponent }) => {
     // State variables to manage the display of achievement toast
@@ -15,15 +17,17 @@ const MotherboardPage = ({ unlockNextComponent }) => {
     
     // Hook to trigger an effect after the component has rendered
     useEffect(() => {
+        // Ensure the window scrolls to the top on page load
+       window.scrollTo(0, 0);
         // Call the unlockNextComponent function to check if the motherboard is unlocked
         const nextComponentName = unlockNextComponent('motherboard');
         if (nextComponentName) {
             // If the motherboard is unlocked, set the toast message
-            setToastMessage(`Achievement Unlocked: ${nextComponentName}!`);
+            setToastMessage(`You have unlocked the next section: ${nextComponentName}!`);
             // Show the toast
             setShowToast(true);
             // Hide the toast after 3 seconds
-            setTimeout(() => setShowToast(false), 3000);
+             setTimeout(() => setShowToast(false), 3000);
         }
     }, [unlockNextComponent]); // Depend on unlockNextComponent function for changes
 
@@ -38,21 +42,29 @@ const MotherboardPage = ({ unlockNextComponent }) => {
 
     return (
         <div className="motherboard-page">
-            {/* Render the MotherboardIntroduction component */}
-           <Title text="The Motherboard" />            {/* Render the MotherboardComponents component */}
+            {/* Title component */}
+            <Title  />
+            {/* Parallax background section */}
+            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+            </section>
             <MotherboardComponents />
-            {/* Render the MotherboardTypes component */}
+                      {/* Parallax background section */}
+                      <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+            </section>
+            {/* Types section */}
             <MotherboardTypes />
-            {/* Render the MotherboardFeatures component */}
+                      {/* Parallax background section */}
+                      <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+            </section>
+            {/* Features section */}
             <MotherboardFeatures />
             <div className="navigation-buttons">
-                {/* Button to go back to the main menu */}
-                <button onClick={handleGoHome}>Go Back to Main Menu</button>
-                {/* Button to continue to the CPU page */}
-                <button onClick={handleContinue}>Continue to CPU</button>
+            <button onClick={handleGoHome}>View progress</button>
+            <button onClick={handleContinue}>Continue</button>
             </div>
-            {/* Render the AchievementToast component if showToast is true */}
+            {/* Renders Achievement to unlock next component*/}
             {showToast && <AchievementToast show={showToast} message={toastMessage} />}
+            <Footer />
         </div>
     );
 };

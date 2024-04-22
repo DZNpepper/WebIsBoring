@@ -11,7 +11,7 @@ const Achievement = ({ show, message, onClose }) => {
       setTimeout(() => setShouldRender(false), 600); 
     }
   }, [show]);
-
+  
   return shouldRender ? (
     <div className={`achievement ${show ? 'fade-in' : 'fade-out'}`}>
       <span>{message}</span>

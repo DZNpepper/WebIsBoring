@@ -20,9 +20,11 @@ const PcCasePage = ({ unlockNextComponent }) => {
 
     // Achievements
     useEffect(() => {
+        // Ensure the window scrolls to the top on page load
+       window.scrollTo(0, 0);
         const nextComponentName = unlockNextComponent('pc-case');
         if (nextComponentName) {
-            setToastMessage(`Achievement Unlocked: ${nextComponentName}!`);
+            setToastMessage(`You have unlocked the next section: ${nextComponentName}!`);
             setShowToast(true);
             setTimeout(() => setShowToast(false), 3000);
         }
