@@ -1,13 +1,11 @@
-//React
 import React from 'react';
-// Component
+
 const Description = () => {
-    return (
-        <div className="gpu-description">
-            <p>The Graphics Processing Unit (GPU) is specialized hardware used to accelerate the rendering of images, videos, and animations. It is highly effective in performing parallel operations required for graphics rendering and deep learning tasks.</p>
-            <p>GPUs are essential for tasks that require handling large blocks of data simultaneously, such as in video editing, gaming, and machine learning applications. They help to offload these intensive tasks from the CPU, improving overall system performance.</p>
-        </div>
-    );
+  return (
+    <div className="description">
+      <p>Graphics Processing Units (GPUs) are crucial for rendering images, video, and animations, especially in high-intensity gaming and professional design. They work in parallel with CPUs to accelerate rendering in modern computers, enhancing both the performance and efficiency of running applications.</p>
+    </div>
+  );
 };
 
 export default Description;

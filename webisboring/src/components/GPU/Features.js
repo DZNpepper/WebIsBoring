@@ -1,13 +1,16 @@
-// React
 import React from 'react';
-// Component
+
 const Features = () => {
-    return (
-        <div className="gpu-features">
-            <h2>Key Features of GPUs</h2>
-            <p>Modern GPUs feature advancements like ray tracing for realistic lighting and shadows, AI-acceleration for faster processing in AI applications, and support for multiple monitors and high resolutions.</p>
-        </div>
-    );
+  return (
+    <div className="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Ray Tracing</strong> Delivers realistic lighting effects by simulating the physical behavior of light.</li>
+        <li><strong>AI Acceleration</strong> Uses machine learning to improve graphics rendering and support advanced computational tasks.</li>
+        <li><strong>Multi-Monitor Support</strong> Allows the connection of multiple monitors for an expanded visual workspace, enhancing productivity and gaming immersion.</li>
+      </ul>
+    </div>
+  );
 };
 
 export default Features;

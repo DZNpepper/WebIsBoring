@@ -75,14 +75,19 @@ $mobile-breakpoint: 768px;
 
 // Parallax backgrounds
 .parallax {
-  background: attachment center, position center, repeat no-repeat, size cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 100%;
   height: 59vh;
   margin-top: $base-spacing;
+
   @media (max-width: $mobile-breakpoint) {
-    background-attachment: local;
+    background-attachment: scroll; // Use 'scroll' instead of 'local' for compatibility
   }
 }
+
 
 // Navigation buttons
 .navigation-buttons {
@@ -94,13 +99,13 @@ $mobile-breakpoint: 768px;
 
   button {
     padding: 10px $base-spacing;
-    background-color: $primary-color;
+    background-color: #b91e1e;
     color: white;
     border: none;
     height: 10rem; 
     font-size: 50px; 
     margin: 2%; 
-    border-radius: 5px;
+    border-radius: 25%;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: background-color 0.3s; 

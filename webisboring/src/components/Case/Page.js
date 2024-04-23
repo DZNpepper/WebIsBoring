@@ -9,7 +9,7 @@ import Footer from '../Footer/Footer.js';
 // Sections
 import Description from './Description.js';
 import Types from './Types.js';
-import Features from './Features.js';
+import Features from './Considerations.js';
 import Components from './Components.js';
 // Images
 import Case1 from '../../assets/images/Case3.webp';
