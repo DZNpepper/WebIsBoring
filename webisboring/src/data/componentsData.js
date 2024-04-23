@@ -47,7 +47,7 @@ const componentsData = [
     unlocked: false
   },
   {
-    id: 'power supply',
+    id: 'psu',
     name: 'Power Supply',
     description: 'Supplying the PC with Power', // Description
     image: PSU, // Image

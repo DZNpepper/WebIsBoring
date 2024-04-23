@@ -7,22 +7,18 @@ const Types = () => (
         <h2>Types:</h2>
         {/* List of PC case types with descriptions */}
         <ul>
-        <br></br>
-            {/* Full Tower */}
-            <li>
-                <strong>Full Tower:</strong> Ideal for users who seek extensive upgradability. Can accommodate multiple graphics cards, extensive water cooling systems, and numerous storage drives. Used by enthusiasts and professionals who require additional space.
-            </li>
             <br></br>
-            {/* Mid Tower */}
             <li>
-                <strong>Mid Tower:</strong> Most common due to their balance between size and expandability. Supports a variety of motherboards and has sufficient room for system cooling and storage. Strikes a good balance for gamers and general users.
-            </li>
-            <br></br>
-            {/* Mini-ITX */}
+                {/* Full Tower */}
+                <strong>Full Tower:</strong> The ultimate choice for high-end builds, Full Tower cases offer extensive upgradability. They can accommodate multiple graphics cards, elaborate water cooling systems, and numerous storage drives. These are typically favored by enthusiasts and professionals who need extra space for complex setups or those who plan to expand their system capabilities over time.
+            </li><br></br>
             <li>
-                <strong>Mini-ITX:</strong> Designed for Mini-ITX motherboards, making them the smallest available. Ideal for users with limited space or those looking for a portable system. Despite their size, they are cleverly designed to support powerful components.
-            </li>
-            <br></br>
+                {/* Mid Tower */}
+                <strong>Mid Tower:</strong> The most popular type, Mid Tower cases provide a perfect balance between size and expandability. They support a wide range of motherboards and have ample room for effective system cooling and multiple storage options. Ideal for gamers and general users who need versatility without the bulk of a full-sized tower.
+            </li><br></br>
+            <li>
+                <strong>Mini-ITX:</strong> Compact and designed specifically for Mini-ITX motherboards, these cases are the smallest available. They are perfect for users with limited space, such as those in small apartments or for setups that need to be easily portable. Despite their small size, Mini-ITX cases are ingeniously designed to efficiently utilize every inch of space, allowing them to support powerful components suitable for a high-performance, space-efficient PC.
+    </li><br></br>
         </ul>
     </div>
 );

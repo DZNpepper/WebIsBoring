@@ -12,9 +12,9 @@ import Types from './Types.js';
 import Features from './Features.js';
 import Components from './Components.js';
 // Images
-import Case1 from '../../assets/images/Case1.webp';
-import Case2 from '../../assets/images/Case2.webp';
-import Case3 from '../../assets/images/Case3.webp';
+import Case1 from '../../assets/images/Case3.webp';
+import Case2 from '../../assets/images/Case1.webp';
+import Case3 from '../../assets/images/Case2.webp';
 import Case4 from '../../assets/images/Case4.webp';
 // Styling
 import './Style.scss';
