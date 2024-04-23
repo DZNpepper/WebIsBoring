@@ -1,0 +1,21 @@
+//breakpoint
+$base-spacing: 20px;
+ // Mobile devices breakpoint
+$mobile-breakpoint: 768px;
+
+.parallax {
+    background: {
+      attachment: fixed; 
+      position: center;
+      repeat: no-repeat;
+      size: cover;
+      max-width: 100%;
+    }
+    height: 50vh;
+    margin-top: $base-spacing;
+  
+    @media (max-width: $mobile-breakpoint) {
+      background-attachment: scroll; 
+    }
+  }
+  

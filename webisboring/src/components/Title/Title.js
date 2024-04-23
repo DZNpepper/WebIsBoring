@@ -1,6 +1,8 @@
+// React
 import React from 'react';
-import './Title.scss';
-
+// Styling
+import './Style.scss';
+// Title component
 const Title = ({ text, center }) => { 
   const titleClass = center ? 'title' : '';
   return (
@@ -8,4 +10,4 @@ const Title = ({ text, center }) => {
   );
 };
 
-export default Title;
+export default Title; 

@@ -1,4 +1,4 @@
-// Importing images for components
+// Images
 import pccaseImage from '../assets/images/PCCASE.webp';
 import MotherboardImage from '../assets/images/Motherboard1.webp';
 import cpuImage from '../assets/images/CPU1.webp';
@@ -15,7 +15,7 @@ const componentsData = [
     name: 'PC Case',
     description: 'Houses the components of a computer, protecting them and aiding in cooling.',
     image: pccaseImage, // Image 
-    unlocked: true,
+    unlocked: true, //
   },
   {
     id: 'motherboard',
@@ -68,4 +68,4 @@ const componentsData = [
   },
 ];
 
-export default componentsData; // Exporting componentsData array
+export default componentsData;

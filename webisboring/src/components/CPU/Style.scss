@@ -1,0 +1,39 @@
+
+.cpu-page .parallax {
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* For testing:
+    *  For the issue of parallex effect not working on mobile for iOS (works on Android)
+    *  Android tested via browsers: Brave & Chrome
+    */
+    @media (max-width: 768px) {
+        background-attachment: scroll;
+    }
+}
+
+.cpu-description, .cpu-components, .cpu-features {
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+
+    button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}
