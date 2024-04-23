@@ -23,6 +23,9 @@ $mobile-breakpoint: 768px;
         color: $primary-color; 
         margin-bottom: 10px;
         font-size: 65px;
+        display: flex;         
+        flex-direction: column; 
+        align-items: center;
 
         @media (max-width: $mobile-breakpoint) {
           font-size: 40px;
@@ -32,6 +35,9 @@ $mobile-breakpoint: 768px;
     ul {
         list-style-type: none; 
         padding: 0;
+        display: flex;         
+        flex-direction: column; 
+        align-items: center;
     }
 
     li {
@@ -39,6 +45,7 @@ $mobile-breakpoint: 768px;
         font-size: 25px;
         line-height: 1.6; 
         font-family:  Georgia, 'Times New Roman', Times, serif;
+        
           @media (max-width: $mobile-breakpoint) {
             font-size: 16px;
           }
@@ -50,7 +57,7 @@ $mobile-breakpoint: 768px;
     p {
         color: $primary-color;
         font-size: 35px;
-        font-family: cursive; 
+        font-family:  Georgia, 'Times New Roman', Times, serif;
         margin: 2rem;
           @media (max-width: $mobile-breakpoint) {
             font-size: 19px;
@@ -81,26 +88,33 @@ $mobile-breakpoint: 768px;
 .navigation-buttons {
   text-align: center;
   display: flex;
-  flex-direction: row; 
-  justify-content: center;
+  flex-direction: row; // Default layout for desktop
+  justify-content: center; // Keeps buttons centered on desktop
+  margin-top: 20px; // Ensure some space above the button section
+
   button {
     padding: 10px $base-spacing;
     background-color: $primary-color;
     color: white;
     border: none;
-    height: 15rem;
-    font-size: 50px;
-    margin: 2%;
+    height: 15rem; // Original large button height for desktop
+    font-size: 50px; // Original large font size for desktop
+    margin: 2%; // Space between buttons
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Enhanced shadow
+    transition: background-color 0.3s; // Smooth transition for hover
+
     &:hover {
       background-color: $hover-color;
     }
-  }
-  @media (max-width: $mobile-breakpoint) {
-    flex-direction: column;
-    button {
-      width: 100%;
+
+    @media (max-width: $mobile-breakpoint) {
+      flex: 1 1 45%; // Allows two buttons per row on mobile
+      height: auto; // Adjusts height for mobile
+      font-size: 18px; // Smaller font size for mobile
+      margin: 5px; // Smaller margin for mobile
     }
   }
 }
+
