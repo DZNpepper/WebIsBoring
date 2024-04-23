@@ -4,7 +4,7 @@ import React from 'react';
 const Title = () => (
     <div className="pc-case-introduction">
         {/* Title  */}
-        <h1>PC Case</h1>
+        <h1>Case</h1>
     </div>
 );
 

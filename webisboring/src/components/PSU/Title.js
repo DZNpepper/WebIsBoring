@@ -4,7 +4,7 @@ import React from 'react';
 const Title = () => (
     <div>
         {/* Title */}
-        <h1>Power Supply Unit (PSU)</h1>
+        <h1>PSU</h1>
     </div>
 );
 

@@ -4,7 +4,7 @@ import React from 'react';
 const Title = () => (
     <div>
         {/* Title */}
-        <h1>Graphics Processing Unit (GPU)</h1>
+        <h1>GPU</h1>
     </div>
 );
 

@@ -4,7 +4,7 @@ import React from 'react';
 const Title = () => (
     <div>
         {/* Title */}
-        <h1>Random Access Memory (RAM)</h1>
+        <h1>RAM</h1>
     </div>
 );
 
