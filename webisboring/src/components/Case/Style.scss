@@ -1,7 +1,7 @@
 // Colors
 $primary-color: rgba(0, 0, 0, 0.8);  
 $hover-color: #b91e1e;
-$light-blue: rgba(135, 206, 250, 0.2);
+$shade: rgba(0, 0, 0, 0.2);
 
 // Breakpoints and spacing
 $base-spacing: 20px;
@@ -9,8 +9,8 @@ $mobile-breakpoint: 768px;
 
 // Overall page background
 .pc-case-page {
-    background-color: rgba(88, 88, 88, 0.8); 
-    color: #fff; 
+    background-color: #a7a3a3;
+ 
 
     div {
         margin: 10px;
@@ -55,17 +55,17 @@ $mobile-breakpoint: 768px;
     }
 
     p {
-        color: $primary-color;
         font-size: 35px;
         font-family:  Georgia, 'Times New Roman', Times, serif;
         margin: 2rem;
+        color: #000;
           @media (max-width: $mobile-breakpoint) {
             font-size: 19px;
           }
       }
 
     .pc-case-types, .pc-case-features, .pc-case-components {
-        background-color: $light-blue;
+        background-color: $shade;
     }
 
     .pc-case-types h2, .pc-case-features h2, .pc-case-components h2 {
@@ -88,32 +88,32 @@ $mobile-breakpoint: 768px;
 .navigation-buttons {
   text-align: center;
   display: flex;
-  flex-direction: row; // Default layout for desktop
-  justify-content: center; // Keeps buttons centered on desktop
-  margin-top: 20px; // Ensure some space above the button section
+  flex-direction: row; 
+  justify-content: center; 
+  margin-top: 20px;
 
   button {
     padding: 10px $base-spacing;
     background-color: $primary-color;
     color: white;
     border: none;
-    height: 15rem; // Original large button height for desktop
-    font-size: 50px; // Original large font size for desktop
-    margin: 2%; // Space between buttons
+    height: 10rem; 
+    font-size: 50px; 
+    margin: 2%; 
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Enhanced shadow
-    transition: background-color 0.3s; // Smooth transition for hover
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s; 
 
     &:hover {
       background-color: $hover-color;
     }
 
     @media (max-width: $mobile-breakpoint) {
-      flex: 1 1 45%; // Allows two buttons per row on mobile
-      height: auto; // Adjusts height for mobile
-      font-size: 18px; // Smaller font size for mobile
-      margin: 5px; // Smaller margin for mobile
+      flex: 1 1 45%;
+      height: auto; 
+      font-size: 18px;
+      margin: 5px;
     }
   }
 }
