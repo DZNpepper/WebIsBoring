@@ -10,7 +10,7 @@ import Description from './Description';
 import Features from './Features';
 import Component from './Component';
 // Images
-import SSD from '../../assets/images/SSD.webp'; 
+import SSD from '../../assets/images/Ssd.webp'; 
 // Styling
 import './Page.scss';
 

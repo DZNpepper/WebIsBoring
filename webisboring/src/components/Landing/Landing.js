@@ -5,7 +5,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 // Component
 import Title from '../Title/Title';
 // Images
-import Image from '../../assets/images/ciruit.webp'
+import Image from '../../assets/images/Ciruit.webp'
 // Styling
 import './Style.scss';
 const Landing = () => {

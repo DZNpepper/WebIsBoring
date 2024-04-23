@@ -10,9 +10,9 @@ import Features from './Features';
 import Description from './Description';
 import Components from './Components';
 // Images 
-import CpuImage from '../../assets/images/CPU.webp';
-import CPU1 from '../../assets/images/CPU1.webp';
-import CPU2 from '../../assets/images/CPU2.webp';
+import CpuImage from '../../assets/images/Cpu.webp';
+import CPU1 from '../../assets/images/Cpu1.webp';
+import CPU2 from '../../assets/images/Cpu2.webp';
 // Stying
 import './Style.scss';
 

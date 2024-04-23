@@ -10,8 +10,8 @@ import Features from './Features';
 import Description from './Description'; 
 import Components from './Components';
 //Images
-import GPU from '../../assets/images/GPU.webp';
-import GPU2 from '../../assets/images/GPU2.webp';
+import GPU from '../../assets/images/Gpu.webp';
+import GPU2 from '../../assets/images/Gpu2.webp';
 // Styling
 import './Style.scss'; 
 

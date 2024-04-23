@@ -10,7 +10,7 @@ import Features from './Features';
 import Description from './Description'; 
 import Components from './Components'; 
 // Images
-import PSU from '../../assets/images/PSU.webp';
+import PSU from '../../assets/images/Psu.webp';
 // Styling
 import './Style.scss'; 
 

@@ -10,7 +10,7 @@ import Features from './Features';
 import Description from './Description';
 import Components from './Components'; 
 // Images
-import HddImage from '../../assets/images/HDD.webp';
+import HddImage from '../../assets/images/Hdd.webp';
 // Stying
 import './Style.scss'; 
 

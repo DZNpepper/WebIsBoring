@@ -1,12 +1,12 @@
 // Images
 import Case from '../assets/images/Case1.webp';
 import Motherboard from '../assets/images/Motherboard1.webp';
-import CPU from '../assets/images/CPU1.webp';
-import GPU from '../assets/images/GPU.webp'
+import CPU from '../assets/images/Cpu1.webp';
+import GPU from '../assets/images/Gpu.webp'
 import RAM from '../assets/images/Ram.webp'
-import PSU from '../assets/images/PSU.webp'
-import HDD from '../assets/images/HDD.webp'
-import SSD from '../assets/images/SSD.webp'
+import PSU from '../assets/images/Psu.webp'
+import HDD from '../assets/images/Hdd.webp'
+import SSD from '../assets/images/Ssd.webp'
 
 
 // Array containing data for various components

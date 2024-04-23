@@ -4,14 +4,15 @@ import { useNavigate } from 'react-router-dom';
 //Components
 import AchievementToast from '../Achievement/Achievement';
 import Title from './Title'; 
+import Footer from '../Footer/Footer';
+//Pages
 import Features from './Features'; 
 import Description from './Description'; 
 import Components from './Components'; 
-import Footer from '../Footer/Footer';
-// Styling 
-import './Page.scss';
 //Images
 import Ram from '../../assets/images/Ram.webp';
+// Styling 
+import './Page.scss';
 
 const Page = ({ unlockNextComponent }) => {
    // State variables to manage the display of achievement toast
