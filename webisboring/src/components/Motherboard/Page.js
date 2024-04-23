@@ -6,7 +6,7 @@ import AchievementToast from '../Achievement/Achievement';
 import Title from './Title';
 import Footer from '../Footer/Footer';
 // Sections
-import Components from './Components'; 
+import Components from './Description'; 
 import Types from './Types';
 import Features from './Features';
 //Images

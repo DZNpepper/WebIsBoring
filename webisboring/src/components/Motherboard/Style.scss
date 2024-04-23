@@ -1,21 +1,126 @@
-//breakpoint
+// Colors and spacing definitions
+$primary-color: rgba(0, 0, 0, 0.8);  
+$hover-color: #b91e1e;
+$shade: rgba(0, 0, 0, 0.2);
+
+// Breakpoints and base spacing
 $base-spacing: 20px;
- // Mobile devices breakpoint
 $mobile-breakpoint: 768px;
 
-.parallax {
-    background: {
-      attachment: fixed; 
-      position: center;
-      repeat: no-repeat;
-      size: cover;
-      max-width: 100%;
+// Overall page background and styles
+.motherboard-page {
+    background-color: #a7a3a3;
+
+    div {
+        margin: 10px;
+        padding: 15px;
+        border-radius: 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-    height: 50vh;
-    margin-top: $base-spacing;
-  
-    @media (max-width: $mobile-breakpoint) {
-      background-attachment: scroll; 
+
+    h2 {
+        color: $primary-color;
+        margin-bottom: 10px;
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (max-width: $mobile-breakpoint) {
+            font-size: 40px;
+        }
     }
-  }
-  
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin-bottom: 5px;
+        font-size: 25px;
+        line-height: 1.6;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        @media (max-width: $mobile-breakpoint) {
+            font-size: 16px;
+        }
+
+        strong {
+            color: #b91e1e;
+        }
+    }
+
+    p {
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #000;
+        text-align: center;
+
+        @media (max-width: $mobile-breakpoint) {
+            font-size: 19px;
+        }
+    }
+
+    .motherboard-types, .motherboard-features, .motherboard-components {
+        background-color: $shade;
+    }
+
+    .motherboard-types h2, .motherboard-features h2, .motherboard-components h2 {
+        border-bottom: 2px solid #b91e1e;
+    }
+
+    // Parallax backgrounds
+    .parallax {
+        background: {
+            attachment: fixed;
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+            max-width: 100%;
+        }
+        height: 50vh;
+        margin-top: $base-spacing;
+
+        @media (max-width: $mobile-breakpoint) {
+            background-attachment: scroll;
+        }
+    }
+
+    // Navigation buttons
+    .navigation-buttons {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+
+        button {
+            padding: 10px $base-spacing;
+            background-color: #b91e1e;
+            color: white;
+            border: none;
+            height: 10rem;
+            font-size: 50px;
+            margin: 2%;
+            border-radius: 25%;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+
+              &:hover {
+                  background-color: #b91e1e;
+              }
+
+            @media (max-width: $mobile-breakpoint) {
+                flex: 1 1 45%;
+                height: auto;
+                font-size: 18px;
+                margin: 5px;
+            }
+        }
+    }
+}
