@@ -57,10 +57,9 @@ $mobile-breakpoint: 768px;
     p {
         font-size: 35px;
         font-family:  Georgia, 'Times New Roman', Times, serif;
-        color: #000;
         text-align: center;
           @media (max-width: $mobile-breakpoint) {
-            font-size: 19px;
+            font-size: 17px;
           }
       }
 

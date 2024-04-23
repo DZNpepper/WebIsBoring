@@ -11,6 +11,8 @@ import Description from './Description';
 import Components from './Components'; 
 // Images
 import PSU from '../../assets/images/Psu.webp';
+import PSU2 from '../../assets/images/Psu2.webp';
+import PSU3 from '../../assets/images/Psu3.webp';
 // Styling
 import './Style.scss'; 
 
@@ -47,18 +49,18 @@ const Page = ({ unlockNextComponent }) => {
             </section>
             <Description />
              {/* Parallax section */}
-             <section className="parallax" style={{ backgroundImage: `url(${PSU})`, position: 'relative' }}>
+             <section className="parallax" style={{ backgroundImage: `url(${PSU2})`, position: 'relative' }}>
             </section>
             <Components />
              {/* Parallax section */}
-             <section className="parallax" style={{ backgroundImage: `url(${PSU})`, position: 'relative' }}>
+             <section className="parallax" style={{ backgroundImage: `url(${PSU3})`, position: 'relative' }}>
             </section>
             <Features />
             <div className="navigation-buttons">
                 {/* Button to view progress */}
-                <button onClick={handleGoHome}>Go Back to Main Menu</button>
+                <button onClick={handleGoHome}>View Progress</button>
                 {/* Button to  CPU page */}
-                <button onClick={handleContinue}>Continue to Hard drive</button>
+                <button onClick={handleContinue}>Continue</button>
             </div>
             {/* Renders Achievement to unlock next component*/}
             {showToast && <AchievementToast show={showToast} message={toastMessage} />}

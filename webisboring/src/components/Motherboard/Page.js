@@ -7,11 +7,13 @@ import Title from './Title';
 import Footer from '../Footer/Footer';
 // Sections
 import Components from './Description'; 
-import Types from './Types';
-import Features from './Features';
+import Types from './Components';
+import Features from './Type';
 //Images
-import MotherboardImage from '../../assets/images/Motherboard.webp';
 import Motherboard1 from '../../assets/images/Motherboard1.webp';
+import Motherboard2 from '../../assets/images/Motherboard2.webp';
+import Motherboard3 from '../../assets/images/Motherboard3.webp';
+
  // Styling
 import './Style.scss'; 
 
@@ -31,7 +33,7 @@ const Motherboard = ({ unlockNextComponent }) => {
             // Show the toast
             setShowToast(true);
             // Hide the toast after 3 seconds
-             setTimeout(() => setShowToast(false), 3000);
+              setTimeout(() => setShowToast(false), 3000);
         }
     }, [unlockNextComponent]); // Depend on unlockNextComponent function for changes
     // Function to navigate back to the main menu
@@ -45,16 +47,16 @@ const Motherboard = ({ unlockNextComponent }) => {
             {/* Title */}
             <Title  />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${MotherboardImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Motherboard1})`, position: 'relative' }}>
             </section>
             <Components />
             {/* Parallax  section */}
-            <section className="parallax" style={{ backgroundImage: `url(${Motherboard1})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Motherboard2})`, position: 'relative' }}>
             </section>
             {/* Types section */}
             <Types />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${Motherboard1})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Motherboard3})`, position: 'relative' }}>
             </section>
             {/* Features section */}
             <Features />

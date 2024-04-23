@@ -10,9 +10,9 @@ import Features from './Features';
 import Description from './Description';
 import Components from './Components';
 // Images 
-import CpuImage from '../../assets/images/Cpu.webp';
 import CPU1 from '../../assets/images/Cpu1.webp';
 import CPU2 from '../../assets/images/Cpu2.webp';
+import CPU3 from '../../assets/images/Cpu3.webp';
 // Stying
 import './Style.scss';
 
@@ -45,16 +45,16 @@ const CPU = ({ unlockNextComponent }) => {
         <div className="cpu-page">
             <Title />
              {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${CpuImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${CPU1})`, position: 'relative' }}>
             </section>
             <Description />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${CPU1})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${CPU2})`, position: 'relative' }}>
             </section>
             {/* CPU section */}
             <Components />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${CPU2})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${CPU3})`, position: 'relative' }}>
             </section>
             {/* CPU section*/}
             <Features />

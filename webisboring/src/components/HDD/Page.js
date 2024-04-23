@@ -11,6 +11,8 @@ import Description from './Description';
 import Components from './Components'; 
 // Images
 import HddImage from '../../assets/images/Hdd.webp';
+import Hdd2 from '../../assets/images/Hdd2.webp';
+import Hdd3 from '../../assets/images/Hdd3.webp';
 // Stying
 import './Style.scss'; 
 
@@ -47,11 +49,11 @@ const HDD = ({ unlockNextComponent }) => {
             </section>
             <Description />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${HddImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Hdd2})`, position: 'relative' }}>
             </section>
             <Components />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${HddImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Hdd3})`, position: 'relative' }}>
             </section>
             <Features />
              {/* Buttons */}

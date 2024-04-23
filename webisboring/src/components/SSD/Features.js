@@ -5,9 +5,9 @@ const Features = () => {
     return (
         <div className="technology-features">
             <ul>
-                <li>Speed: How quickly a system can process data.</li>
-                <li>Efficiency: The ability of a system to use resources optimally.</li>
-                <li>Durability: How well a system withstands wear and tear over time.</li>
+                <li><strong>Speed</strong> How quickly a system can process data.</li>
+                <li><strong>Efficiency</strong> The ability of a system to use resources optimally.</li>
+                <li><strong>Durability</strong> How well a system withstands wear and tear over time.</li>
             </ul>
         </div>
     );

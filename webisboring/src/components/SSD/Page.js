@@ -11,6 +11,7 @@ import Features from './Features';
 import Component from './Component';
 // Images
 import SSD from '../../assets/images/Ssd.webp'; 
+import SSD2 from '../../assets/images/Ssd2.webp'; 
 // Styling
 import './Page.scss';
 
@@ -31,7 +32,7 @@ const Page = ({ unlockNextComponent, componentType }) => {
     // Main page button
     const handleGoHome = () => navigate('/main-page');
     return (
-        <div className={`${componentType}-page`}>
+        <div className={`ssd-page`}>
             <Title text={`Learn About ${componentType}`} />
             <Description description={`Everything you need to know about ${componentType}.`} />
             {/* Parallax section */}
@@ -39,12 +40,12 @@ const Page = ({ unlockNextComponent, componentType }) => {
             </section>
             <Features featuresList={['Speed', 'Efficiency', 'Cost']} />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${SSD})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${SSD2})`, position: 'relative' }}>
             </section>
             <Component />
             {/* Home Button */}
             <div className="navigation-buttons">
-                <button onClick={handleGoHome}>Click if you want to restart</button>
+                <button onClick={handleGoHome}>Click to view progress</button>
             </div>
             {showToast && <AchievementToast show={showToast} message={toastMessage} />}
             <Footer />

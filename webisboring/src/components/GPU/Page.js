@@ -12,6 +12,7 @@ import Components from './Components';
 //Images
 import GPU from '../../assets/images/Gpu.webp';
 import GPU2 from '../../assets/images/Gpu2.webp';
+import GPU3 from '../../assets/images/Gpu3.webp';
 // Styling
 import './Style.scss'; 
 
@@ -52,7 +53,7 @@ const Page = ({ unlockNextComponent }) => {
             <section className="parallax" style={{ backgroundImage: `url(${GPU2})`, position: 'relative' }}>
             </section>
             <Components />
-            <section className="parallax" style={{ backgroundImage: `url(${GPU2})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${GPU3})`, position: 'relative' }}>
             </section>
             <Features />
             <div className="navigation-buttons">
