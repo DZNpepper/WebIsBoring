@@ -10,7 +10,8 @@ import Components from './Components';
 import Types from './Types';
 import Features from './Features';
 //Images
-import Case from '../../assets/images/PCCASE.webp';
+import MotherboardImage from '../../assets/images/Motherboard.webp';
+import Motherboard1 from '../../assets/images/Motherboard1.webp';
  // Styling
 import './Style.scss'; 
 
@@ -44,16 +45,16 @@ const Motherboard = ({ unlockNextComponent }) => {
             {/* Title */}
             <Title  />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${Case})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${MotherboardImage})`, position: 'relative' }}>
             </section>
             <Components />
             {/* Parallax  section */}
-            <section className="parallax" style={{ backgroundImage: `url(${Case})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Motherboard1})`, position: 'relative' }}>
             </section>
             {/* Types section */}
             <Types />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${Case})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Motherboard1})`, position: 'relative' }}>
             </section>
             {/* Features section */}
             <Features />

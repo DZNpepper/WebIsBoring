@@ -10,7 +10,8 @@ import Features from './Features';
 import Description from './Description'; 
 import Components from './Components';
 //Images
-import Case from '../../assets/images/PCCASE.webp';
+import GPU from '../../assets/images/GPU.webp';
+import GPU2 from '../../assets/images/GPU2.webp';
 // Styling
 import './Style.scss'; 
 
@@ -44,14 +45,14 @@ const Page = ({ unlockNextComponent }) => {
             {/* Title  */}
             <Title />
              {/* Parallax background section */}
-            <section className="parallax" style={{ backgroundImage: `url(${Case})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${GPU})`, position: 'relative' }}>
             </section>
             <Description />
             {/* Parallax background section */}
-            <section className="parallax" style={{ backgroundImage: `url(${Case})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${GPU2})`, position: 'relative' }}>
             </section>
             <Components />
-            <section className="parallax" style={{ backgroundImage: `url(${Case})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${GPU2})`, position: 'relative' }}>
             </section>
             <Features />
             <div className="navigation-buttons">

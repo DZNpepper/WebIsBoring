@@ -10,7 +10,7 @@ import Description from './Description';
 import Features from './Features';
 import Component from './Component';
 // Images
-import SSDImage from '../../assets/images/SSD.webp'; 
+import SSD from '../../assets/images/SSD.webp'; 
 // Styling
 import './Page.scss';
 
@@ -35,14 +35,14 @@ const Page = ({ unlockNextComponent, componentType }) => {
             <Title text={`Learn About ${componentType}`} />
             <Description description={`Everything you need to know about ${componentType}.`} />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${SSDImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${SSD})`, position: 'relative' }}>
             </section>
             <Features featuresList={['Speed', 'Efficiency', 'Cost']} />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${SSDImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${SSD})`, position: 'relative' }}>
             </section>
             <Component />
-         {/* Home Button */}
+            {/* Home Button */}
             <div className="navigation-buttons">
                 <button onClick={handleGoHome}>Click if you want to restart</button>
             </div>

@@ -1,12 +1,13 @@
 // Images
-import pccaseImage from '../assets/images/PCCASE.webp';
-import MotherboardImage from '../assets/images/Motherboard1.webp';
-import cpuImage from '../assets/images/CPU1.webp';
-import GPUImage from '../assets/images/GPU.webp'
-import RamImage from '../assets/images/Ram.webp'
-import PowerSupply from '../assets/images/PowerSupply.webp'
-import Hdd from '../assets/images/Hdd.webp'
+import Case from '../assets/images/Case1.webp';
+import Motherboard from '../assets/images/Motherboard1.webp';
+import CPU from '../assets/images/CPU1.webp';
+import GPU from '../assets/images/GPU.webp'
+import RAM from '../assets/images/RAM.webp'
+import PSU from '../assets/images/PSU.webp'
+import HDD from '../assets/images/HDD.webp'
 import SSD from '../assets/images/SSD.webp'
+
 
 // Array containing data for various components
 const componentsData = [
@@ -14,49 +15,49 @@ const componentsData = [
     id: 'pc-case',
     name: 'PC Case',
     description: 'Houses the components of a computer, protecting them and aiding in cooling.',
-    image: pccaseImage, // Image 
+    image: Case, // Image 
     unlocked: true, //
   },
   {
     id: 'motherboard',
     name: 'Motherboard',
     description: 'Main printed circuit board in a computer, which houses the CPU, memory, and other essential components.',
-    image: MotherboardImage, // Image
+    image: Motherboard, // Image
     unlocked: false
   },
   {
     id: 'cpu',
     name: 'CPU',
     description: 'The brain of the computer.', // Description
-    image: cpuImage, // Image
+    image: CPU, // Image
     unlocked: false
   },
   {
     id: 'gpu',
     name: 'GPU',
     description: 'Graphics processing powerhouse.', // Description
-    image: GPUImage, // Image
+    image: GPU, // Image
     unlocked: false
   },
   {
     id: 'ram',
     name: 'RAM',
     description: 'Short-term memory of the computer.', // Description
-    image: RamImage,  // Image
+    image: RAM,  // Image
     unlocked: false
   },
   {
     id: 'power supply',
     name: 'Power Supply',
     description: 'Supplying the PC with Power', // Description
-    image: PowerSupply, // Image
+    image: PSU, // Image
     unlocked: false
   },
   {
     id: 'hdd',
     name: 'Hard Drive',
     description: 'Long-term storage device.', // Description
-    image: Hdd,  // Image
+    image: HDD,  // Image
     unlocked: false
   },
   {

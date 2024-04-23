@@ -1,26 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c886e79.css",
-    "main.js": "/static/js/main.5b8cdd34.js",
+    "main.css": "/static/css/main.799eff1e.css",
+    "main.js": "/static/js/main.3915d8ff.js",
     "static/js/453.93eaebbd.chunk.js": "/static/js/453.93eaebbd.chunk.js",
-    "static/media/Ram.webp": "/static/media/Ram.32739536cbfcc1f393e4.webp",
-    "static/media/PowerSupply.webp": "/static/media/PowerSupply.7d4c19388d5670663cd9.webp",
+    "static/media/GPU2.webp": "/static/media/GPU2.2913cdd188971b6736fe.webp",
+    "static/media/RAM.webp": "/static/media/RAM.32739536cbfcc1f393e4.webp",
+    "static/media/PSU.webp": "/static/media/PSU.7d4c19388d5670663cd9.webp",
     "static/media/CPU1.webp": "/static/media/CPU1.a1a09d4b24dd72a9ff07.webp",
     "static/media/Motherboard1.webp": "/static/media/Motherboard1.1e4d143e302dccb53cac.webp",
+    "static/media/Case3.webp": "/static/media/Case3.a7cfe12db373fddb144e.webp",
     "static/media/SSD.webp": "/static/media/SSD.c364e5b080334761a605.webp",
     "static/media/GPU.webp": "/static/media/GPU.30d793218e8d380ed5c5.webp",
     "static/media/ciruit.webp": "/static/media/ciruit.228abc64170b250d62f3.webp",
-    "static/media/Hdd.webp": "/static/media/Hdd.c06432a13cc5bcc12394.webp",
-    "static/media/PCCASE.webp": "/static/media/PCCASE.44cb29176200c6bacfdf.webp",
+    "static/media/HDD.webp": "/static/media/HDD.c06432a13cc5bcc12394.webp",
+    "static/media/Motherboard.webp": "/static/media/Motherboard.39359cd0754508c48396.webp",
+    "static/media/Case1.webp": "/static/media/Case1.44cb29176200c6bacfdf.webp",
+    "static/media/CPU.webp": "/static/media/CPU.492334811678f93e8292.webp",
+    "static/media/Case4.webp": "/static/media/Case4.8a99c5ec2929544b096e.webp",
     "static/media/Padlock.webp": "/static/media/Padlock.15a035699e35baf1acb7.webp",
-    "static/media/PCCASE2.webp": "/static/media/PCCASE2.5b8b20efdfd92fca4f29.webp",
+    "static/media/CPU2.webp": "/static/media/CPU2.e8c0100bb4185ec755f5.webp",
     "index.html": "/index.html",
-    "main.3c886e79.css.map": "/static/css/main.3c886e79.css.map",
-    "main.5b8cdd34.js.map": "/static/js/main.5b8cdd34.js.map",
+    "main.799eff1e.css.map": "/static/css/main.799eff1e.css.map",
+    "main.3915d8ff.js.map": "/static/js/main.3915d8ff.js.map",
     "453.93eaebbd.chunk.js.map": "/static/js/453.93eaebbd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c886e79.css",
-    "static/js/main.5b8cdd34.js"
+    "static/css/main.799eff1e.css",
+    "static/js/main.3915d8ff.js"
   ]
 }

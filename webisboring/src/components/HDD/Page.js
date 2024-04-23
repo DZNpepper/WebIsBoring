@@ -10,7 +10,7 @@ import Features from './Features';
 import Description from './Description';
 import Components from './Components'; 
 // Images
-import PcCaseImage from '../../assets/images/PCCASE.webp';
+import HddImage from '../../assets/images/HDD.webp';
 // Stying
 import './Style.scss'; 
 
@@ -43,15 +43,15 @@ const HDD = ({ unlockNextComponent }) => {
         <div className="hdd-page">
             <Title />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${HddImage})`, position: 'relative' }}>
             </section>
             <Description />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${HddImage})`, position: 'relative' }}>
             </section>
             <Components />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${HddImage})`, position: 'relative' }}>
             </section>
             <Features />
              {/* Buttons */}

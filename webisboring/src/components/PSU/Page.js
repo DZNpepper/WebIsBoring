@@ -10,7 +10,7 @@ import Features from './Features';
 import Description from './Description'; 
 import Components from './Components'; 
 // Images
-import PcCaseImage from '../../assets/images/PCCASE.webp';
+import PSU from '../../assets/images/PSU.webp';
 // Styling
 import './Style.scss'; 
 
@@ -43,15 +43,15 @@ const Page = ({ unlockNextComponent }) => {
         <div className="psu-page">
             <Title />
              {/* Parallax section */}
-             <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+             <section className="parallax" style={{ backgroundImage: `url(${PSU})`, position: 'relative' }}>
             </section>
             <Description />
              {/* Parallax section */}
-             <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+             <section className="parallax" style={{ backgroundImage: `url(${PSU})`, position: 'relative' }}>
             </section>
             <Components />
              {/* Parallax section */}
-             <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+             <section className="parallax" style={{ backgroundImage: `url(${PSU})`, position: 'relative' }}>
             </section>
             <Features />
             <div className="navigation-buttons">

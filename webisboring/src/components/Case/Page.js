@@ -12,8 +12,10 @@ import Types from './Types.js';
 import Features from './Features.js';
 import Components from './Components.js';
 // Images
-import PcCaseImage from '../../assets/images/PCCASE.webp';
-import PcCaseImage2 from '../../assets/images/PCCASE2.webp';
+import Case1 from '../../assets/images/Case3.webp';
+import Case2 from '../../assets/images/Case3.webp';
+import Case3 from '../../assets/images/Case3.webp';
+import Case4 from '../../assets/images/Case4.webp';
 // Styling
 import './Style.scss';
 
@@ -41,22 +43,22 @@ const Case = ({ unlockNextComponent }) => {
             {/* Introduction */}
             <Title text="PC Case" />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Case1})`, position: 'relative' }}>
             </section>
             {/* Description section */}
             <Description />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage2})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Case2})`, position: 'relative' }}>
             </section>
             {/* Types section*/}
             <Types />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Case3})`, position: 'relative' }}>
             </section>
             {/* Features section */}
             <Features />
             {/* Parallax section */}
-            <section className="parallax" style={{ backgroundImage: `url(${PcCaseImage})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Case4})`, position: 'relative' }}>
             </section>
             {/* Components section*/}
             <Components />
