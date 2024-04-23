@@ -16,7 +16,7 @@ const componentsData = [
     name: 'PC Case',
     description: 'Houses the components of a computer, protecting them and aiding in cooling.',
     image: Case, // Image 
-    unlocked: true, //
+    unlocked: true, // Unlocked 
   },
   {
     id: 'motherboard',
