@@ -11,7 +11,7 @@ import Footer from '../Footer/Footer';
 // Styling 
 import './Page.scss';
 //Images
-import RAM from '../../assets/images/RAM.webp';
+import Ram from '../../assets/images/Ram.webp';
 
 const Page = ({ unlockNextComponent }) => {
    // State variables to manage the display of achievement toast
@@ -45,15 +45,15 @@ const Page = ({ unlockNextComponent }) => {
         <div className="ram-page">
             <Title text="Random Access Memory (RAM)" />
             {/* Parallax background section */}
-            <section className="parallax" style={{ backgroundImage: `url(${RAM})`, position: 'relative' }}>
+            <section className="parallax" style={{ backgroundImage: `url(${Ram})`, position: 'relative' }}>
             </section>
             <Description />
              {/* Parallax background section */}
-             <section className="parallax" style={{ backgroundImage: `url(${RAM})`, position: 'relative' }}>
+             <section className="parallax" style={{ backgroundImage: `url(${Ram})`, position: 'relative' }}>
             </section>
             <Components />
              {/* Parallax background section */}
-             <section className="parallax" style={{ backgroundImage: `url(${RAM})`, position: 'relative' }}>
+             <section className="parallax" style={{ backgroundImage: `url(${Ram})`, position: 'relative' }}>
             </section>
             <Features />
             <div className="navigation-buttons">

@@ -3,7 +3,7 @@ import Case from '../assets/images/Case1.webp';
 import Motherboard from '../assets/images/Motherboard1.webp';
 import CPU from '../assets/images/CPU1.webp';
 import GPU from '../assets/images/GPU.webp'
-import RAM from '../assets/images/RAM.webp'
+import RAM from '../assets/images/Ram.webp'
 import PSU from '../assets/images/PSU.webp'
 import HDD from '../assets/images/HDD.webp'
 import SSD from '../assets/images/SSD.webp'
