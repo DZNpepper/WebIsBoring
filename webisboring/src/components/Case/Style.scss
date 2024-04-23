@@ -1,72 +1,106 @@
 // Colors
-$primary-color: #007BFF;
-$hover-color: #0056b3;
-$text-color: #333;
-//breakpoint
-$base-spacing: 20px;
- // Mobile devices breakpoint
-$mobile-breakpoint: 768px;
- // General styles for parallax backgrounds on desktop
- .parallax {
-   background: {
-     attachment: center;
-     position: center;
-     repeat: no-repeat;
-     size: cover;
-     max-width: 100%;
-   }
-   height: 59vh;
-   margin-top: $base-spacing;
-   @media (max-width: $mobile-breakpoint) {
-     attachment: local;
-   }
-  }
+$primary-color: rgba(0, 0, 0, 0.8);  
+$hover-color: #b91e1e;
+$light-blue: rgba(135, 206, 250, 0.2);
 
+// Breakpoints and spacing
+$base-spacing: 20px;
+$mobile-breakpoint: 768px;
+
+// Overall page background
 .pc-case-page {
-  h1 {
-    text-align: center;
-  }
-  .component-item {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh; 
-    // Apply different styles for mobile devices
-    @media (max-width: $mobile-breakpoint) {
-      background-attachment: scroll; 
-      height: 100vh; 
+    background-color: rgba(88, 88, 88, 0.8); 
+    color: #fff; 
+
+    div {
+        margin: 10px;
+        padding: 15px;
+        border-radius: 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     }
+
+    h2 {
+        color: $primary-color; 
+        margin-bottom: 10px;
+        font-size: 65px;
+
+        @media (max-width: $mobile-breakpoint) {
+          font-size: 40px;
+        }
+    }
+
+    ul {
+        list-style-type: none; 
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 5px;
+        font-size: 25px;
+        line-height: 1.6; 
+        font-family:  Georgia, 'Times New Roman', Times, serif;
+          @media (max-width: $mobile-breakpoint) {
+            font-size: 16px;
+          }
+        strong {
+            color: #b91e1e;
+        }
+    }
+
+    p {
+        color: $primary-color;
+        font-size: 35px;
+        font-family: cursive; 
+        margin: 2rem;
+          @media (max-width: $mobile-breakpoint) {
+            font-size: 19px;
+          }
+      }
+
+    .pc-case-types, .pc-case-features, .pc-case-components {
+        background-color: $light-blue;
+    }
+
+    .pc-case-types h2, .pc-case-features h2, .pc-case-components h2 {
+        border-bottom: 2px solid #b91e1e;
+    }
+}
+
+// Parallax backgrounds
+.parallax {
+  background: attachment center, position center, repeat no-repeat, size cover;
+  max-width: 100%;
+  height: 59vh;
+  margin-top: $base-spacing;
+  @media (max-width: $mobile-breakpoint) {
+    background-attachment: local;
   }
 }
 
-// Styling for navigation buttons
+// Navigation buttons
 .navigation-buttons {
-  margin-top: $base-spacing;
   text-align: center;
   display: flex;
   flex-direction: row; 
   justify-content: center;
-
   button {
     padding: 10px $base-spacing;
     background-color: $primary-color;
     color: white;
     border: none;
+    height: 15rem;
+    font-size: 50px;
+    margin: 2%;
     border-radius: 5px;
     cursor: pointer;
-    margin: 5px;
-
     &:hover {
       background-color: $hover-color;
     }
   }
-
-  // Button styles for mobile devices
   @media (max-width: $mobile-breakpoint) {
-    flex-direction: column; 
-
+    flex-direction: column;
     button {
-      width: 100%; 
+      width: 100%;
     }
   }
 }
