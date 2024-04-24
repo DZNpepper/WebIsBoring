@@ -25,6 +25,6 @@ const Achievement = ({ show, message }) => {
       <span>{message}</span>
     </div>
   ) : null;
-};
+}; 
 
 export default Achievement;
