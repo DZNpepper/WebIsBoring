@@ -11,7 +11,7 @@ import padlockImage from '../../assets/images/Padlock.webp';
 //Styling
 import './Style.scss';
 
-const MainPage = () => {
+const Main = () => {
     return (
         <div>
             <section className="main-page">
@@ -50,4 +50,4 @@ const MainPage = () => {
     );
 };
 
-export default MainPage;
+export default Main;

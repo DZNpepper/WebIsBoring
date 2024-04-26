@@ -4,7 +4,7 @@ import React from 'react';
 const Description = () => {
     return (
         <div className="technology-introduction">
-            <p>Explore the core components of modern technology systems. Understand the basic building blocks that make up the devices and systems you use every day, from computers to mobile phones.</p>
+            <p>A Solid-State Drive (SSD) is a storage device used in computers. Its faster than the traditional hard disks. SSDs have no moving parts</p>
         </div>
     );
 };

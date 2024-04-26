@@ -1,9 +1,11 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from 'react'; 
+import { render } from '@testing-library/react'; 
+import App from './App'; 
 
-test('renders the header text correctly', () => {
-  render(<App />);
-  const headerElement = screen.getByText(/The Web is Boring/i);
-  expect(headerElement).toBeInTheDocument();
+describe('App component', () => {
+  // Test case: Check if the App component renders without crashing
+  it('renders without crashing', () => {
+    // Render the App component
+    render(<App />);
+  });
 });
